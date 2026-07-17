@@ -8,11 +8,11 @@ Quelle est la station-service la moins chère en SP98 autour de chez moi ? Pipel
 
 ## Démarche
 
-1. **Collecte** — Données officielles des prix des carburants, [data.gouv.fr](https://www.data.gouv.fr)
-2. **Nettoyage (Google Sheets)** — Suppression des colonnes inutiles (population, horaires/services en JSON), éclatement de la géométrie en `latitude`/`longitude`, colonnes renommées en snake_case
-3. **Chargement (BigQuery)** — Dataset `fr_carburant`, table importée depuis le CSV nettoyé
-4. **Analyse SQL** — voir [`sql/01_exploration.sql`](sql/01_exploration.sql) : prix min/max, filtrage par département, comptage, calcul de distance géospatiale (`ST_DISTANCE`, `ST_GEOGPOINT`)
-5. **Dashboarding (Power BI)** — voir [`sql/02_vue_dashboard.sql`](sql/02_vue_dashboard.sql) pour la vue finale consommée par le dashboard
+1. **Collecte** : Données officielles des prix des carburants, [data.gouv.fr](https://www.data.gouv.fr)
+2. **Nettoyage (Google Sheets)** : Suppression des colonnes inutiles (population, horaires/services en JSON), éclatement de la géométrie en `latitude`/`longitude`, colonnes renommées en snake_case
+3. **Chargement (BigQuery)** : Dataset `fr_carburant`, table importée depuis le CSV nettoyé
+4. **Analyse SQL** : voir [`sql/01_exploration.sql`](sql/01_exploration.sql) : prix min/max, filtrage par département, comptage, calcul de distance géospatiale (`ST_DISTANCE`, `ST_GEOGPOINT`)
+5. **Dashboarding (Power BI)** : voir [`sql/02_vue_dashboard.sql`](sql/02_vue_dashboard.sql) pour la vue finale consommée par le dashboard
 
 ## Dashboard
 
