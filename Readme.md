@@ -1,4 +1,4 @@
-# ⛽ Prix du SP98 dans le Rhône — Dashboard Power BI
+# ⛽ Prix du SP98 dans le Rhône via Dashboard Power BI
 
 **Manager Data Marketing · Projet individuel**
 
